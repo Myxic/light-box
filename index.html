@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./stript.js" defer></script>
+</head>
+<body>
+     <!-- Images used to open the lightbox -->
+<div class="row" id="row">
+    <div class="column">
+      <img src="img1.jpg" class="hover-shadow" alt="PIC">
+    </div>
+    <div class="column">
+      <img src="img2.jpg"  class="hover-shadow" alt="PIC">
+    </div>
+    <div class="column">
+      <img src="img3.jpg"  class="hover-shadow" alt="PIC">
+    </div>
+    <div class="column">
+      <img src="img4.jpg"  class="hover-shadow" alt="PIC">
+    </div>
+  </div>
+  
+  <!-- The Modal/Lightbox -->
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <div class="numbertext">1 / 4</div>
+        <img src="img1_wide.jpg" style="width:100%" alt="PIC">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">2 / 4</div>
+        <img src="img2_wide.jpg" style="width:100%" alt="PIC">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">3 / 4</div>
+        <img src="img3_wide.jpg" style="width:100%" alt="PIC">
+      </div>
+  
+      <div class="mySlides">
+        <div class="numbertext">4 / 4</div>
+        <img src="img4_wide.jpg" style="width:100%" alt="PIC">
+      </div>
+  
+      <!-- Next/previous controls -->
+      <a class="prev"onclick="plusSlides(-1)" id="prev">&#10094;</a>
+      <a class="next" id="next" onclick="plusSlides(1)" >&#10095;</a>
+  
+      <!-- Caption text -->
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    </div>
+      <!-- Thumbnail image controls -->
+      <div id="thumbnail">
+        <div class="column" >
+          <img class="demo" src="img1.jpg"  alt="Nature">
+        </div>
+    
+        <div class="column">
+          <img class="demo" src="img2.jpg"  alt="Snow">
+        </div>
+    
+        <div class="column">
+          <img class="demo" src="img3.jpg"  alt="Mountains">
+        </div>
+    
+        <div class="column">
+          <img class="demo" src="img4.jpg" alt="Lights">
+        </div>
+      </div>
+      
+    
+  </div> 
+</body>
+</html>
